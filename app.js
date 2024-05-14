@@ -14,6 +14,7 @@ const quoteModel = require('./routes/quoteModel')
 const historyModel = require('./routes/historyModel')
 const invoiceModel = require('./routes/invoiceModel')
 const trackingModel = require('./routes/trackingModel')
+const paymentModel = require('./routes/paymentModel')
 
 
 
@@ -24,6 +25,7 @@ app.use('/api/v1', quoteModel);
 app.use('/api/v1', historyModel);
 app.use('/api/v1', invoiceModel);
 app.use('/api/v1', trackingModel);
+app.use('/api/v1', paymentModel);
 
 app.use(errorMiddleware);
 
